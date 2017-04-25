@@ -49,45 +49,46 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="index.php">Forsdie</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
+                        <a href="om.php">Om Tankevirk</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="aktuelt.php">Aktuelt</a>
                     </li>
+        
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Private <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                                <a href="eksamensangst.php">Eksamensangst</a>
                             </li>
                             <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                                <a href="terapi.php">Terapi</a>
                             </li>
                             <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                                <a href="hypnose.php">Hypnose</a>
                             </li>
                             <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                                <a href="coaching.php">Coaching</a>
                             </li>
                             <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                                <a href="detsigerkunder.php">Det siger kunderne</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Virksomheder <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
+                                <a href="coaching_virksomhed.php">Coaching i virksomheder</a>
                             </li>
                             <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
+                                <a href="kurser_kommunikation.php">Kurser i kommunikation</a>
                             </li>
                             <li>
-                                <a href="blog-post.html">Blog Post</a>
+                                <a href="erhvervskundesiger.php">Det siger erhverskunderne</a>
                             </li>
                         </ul>
                     </li>
@@ -109,7 +110,14 @@
                             <li>
                                 <a href="pricing.html">Pricing Table</a>
                             </li>
+                            
                         </ul>
+                    </li>
+                    <li>
+                        <a href="priser.php">Priser</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.php">Kontakt</a>
                     </li>
                 </ul>
             </div>
