@@ -31,88 +31,10 @@
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                   
-                    <li>
-                        <a href="index.php">Forsdie</a>
-                    </li>
-                    <li>
-                        <a href="om.php">Om Tankevirk</a>
-                    </li>
-        
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Private <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="eksamensangst.php">Eksamensangst</a>
-                            </li>
-                             <li class="dropdown-submenu"><a tabindex="-1" href="#">Terapi</a>
-                <ul class="dropdown-menu">
-					<li><a tabindex="-1" href="samtaleterapi.php">Samtaleterapi</a></li>
-                  <li class="dropdown-submenu">
-                    <a href="psykoterapi.php">Psykoterapi</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="nlp.php">NLP</a></li>
-					  </ul>
-					  <li><a tabindex="-1" href="tre.php">Trauma Release Exercises</a></li>
-					  </ul>
-					</li></li>
-                          <li>
-                                <a href="hypnose.php">Hypnose</a>
-                            </li>
-                           <li class="dropdown-submenu"><a tabindex="-1" href="#">Coaching</a>
-                <ul class="dropdown-menu">
-					<li><a tabindex="-1" href="samtaleterapi.php">Hvordan foregår coaching?</a></li></ul>
-                            <li>
-                                <a href="detsigerkunder.php">Det siger kunderne</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Virksomheder <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="coaching_virksomhed.php">Coaching i virksomheder</a>
-                            </li>
-                            <li>
-                                <a href="kurser_kommunikation.php">Kurser i kommunikation</a>
-                            </li>
-                            <li>
-                                <a href="erhvervskundesiger.php">Det siger erhverskunderne</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="aktuelt.php">Aktuelt</a>
-                    </li>
-                    <li>
-                        <a href="priser.php">Priser</a>
-                    </li>
-                    <li>
-                        <a href="kontakt.php">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+<?php 
+	include 'navigation.php';
+?>
+    
 
     <!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide">
@@ -200,44 +122,6 @@
         </div>
         <!-- /.row -->
 
-        <!-- Portfolio Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
-
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -262,19 +146,7 @@
         </div>
         <!-- /.row -->
 
-        <hr>
-
-        <!-- Call to Action Section -->
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
-                </div>
-            </div>
-        </div>
+        <hr
 
         <hr>
 
