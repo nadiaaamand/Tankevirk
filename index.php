@@ -49,7 +49,7 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 			    <div class="item active">
-			    	<img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg" alt="First slide">
+			    	<img src="img/banner1.jpg" alt="First slide">
                     <!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
@@ -62,12 +62,12 @@
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Læs mere</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			    <div class="item">
-			    	<img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg" alt="Second slide">
+			    	<img src="img/banner2.jpg" alt="Second slide">
 			    	<!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
@@ -80,12 +80,12 @@
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Kontakt</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			    <div class="item">
-			    	<img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg" alt="Third slide">
+			    	<img src="img/banner3.jpg" alt="Third slide">
 			    	<!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
@@ -98,7 +98,7 @@
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Læs mere</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
