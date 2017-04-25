@@ -19,7 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,14 +48,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                   
                     <li>
                         <a href="index.php">Forsdie</a>
                     </li>
                     <li>
                         <a href="om.php">Om Tankevirk</a>
-                    </li>
-                    <li>
-                        <a href="aktuelt.php">Aktuelt</a>
                     </li>
         
                     <li class="dropdown">
@@ -64,15 +62,23 @@
                             <li>
                                 <a href="eksamensangst.php">Eksamensangst</a>
                             </li>
-                            <li>
-                                <a href="terapi.php">Terapi</a>
-                            </li>
-                            <li>
+                             <li class="dropdown-submenu"><a tabindex="-1" href="#">Terapi</a>
+                <ul class="dropdown-menu">
+					<li><a tabindex="-1" href="samtaleterapi.php">Samtaleterapi</a></li>
+                  <li class="dropdown-submenu">
+                    <a href="psykoterapi.php">Psykoterapi</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="nlp.php">NLP</a></li>
+					  </ul>
+					  <li><a tabindex="-1" href="tre.php">Trauma Release Exercises</a></li>
+					  </ul>
+					</li></li>
+                          <li>
                                 <a href="hypnose.php">Hypnose</a>
                             </li>
-                            <li>
-                                <a href="coaching.php">Coaching</a>
-                            </li>
+                           <li class="dropdown-submenu"><a tabindex="-1" href="#">Coaching</a>
+                <ul class="dropdown-menu">
+					<li><a tabindex="-1" href="samtaleterapi.php">Hvordan foregår coaching?</a></li></ul>
                             <li>
                                 <a href="detsigerkunder.php">Det siger kunderne</a>
                             </li>
@@ -92,26 +98,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                            
-                        </ul>
+                    <li>
+                        <a href="aktuelt.php">Aktuelt</a>
                     </li>
                     <li>
                         <a href="priser.php">Priser</a>
