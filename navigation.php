@@ -40,9 +40,9 @@
                           <li>
                                 <a href="hypnose.php">Hypnose</a>
                             </li>
-                           <li class="dropdown-submenu"><a tabindex="-1" href="#">Coaching</a>
+                           <li class="dropdown-submenu"><a tabindex="-1" href="coaching.php">Coaching</a>
                 <ul class="dropdown-menu">
-					<li><a tabindex="-1" href="samtaleterapi.php">Hvordan foregår coaching?</a></li></ul>
+					<li><a tabindex="-1" href="hvordan_coaching.php">Hvordan foregår coaching?</a></li></ul>
                             <li>
                                 <a href="detsigerkunder.php">Det siger kunderne</a>
                             </li>

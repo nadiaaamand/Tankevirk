@@ -54,15 +54,15 @@
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                            	<span>Welcome to <strong>LOREM IPSUM</strong></span>
+                            	<span>Kurser i<strong> kommunikation</strong></span>
                             </h2>
                             <br>
                             <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            	<span>Styrk dialogen i dit firma sammen med dine medarbejdere</span>
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Læs mere</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="kurser_kommunikation.php">Læs mere</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
@@ -72,15 +72,15 @@
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <span>Welcome to LOREM IPSUM</span>
+                                <span>Bliv klar til arbejdsmarkedet</span>
                             </h2>
                             <br>
                             <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            	<span>Styrk dig selv og dine kompetencer</span>
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Kontakt</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="kommune_kursus.php">Læs mere</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
@@ -90,15 +90,15 @@
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <span>Welcome to LOREM IPSUM</span>
+                                <span>Priser</span>
                             </h2>
                             <br>
                             <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            	<span>Se priserne for terapi og coaching</span>
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Læs mere</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="priser.php">Læs mere</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
@@ -124,8 +124,9 @@
                     </div>
                     
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="psykoterapi.php" class="btn btn-default">Læs mere</a>
+                        <p>Føler du dig mere stresset end normalt, har du problemer med din selvtillig/selværd
+                        eller føler du sorg? Så kan terapi være noget for dig. Jeg udbyder forskellige former for terapi alt efter hvilke behov du som person har.</p>
+                        <a href="samtaleterapi.php" class="btn btn-default">Læs mere</a>
                     </div>
                 </div>
             </div>
@@ -136,7 +137,7 @@
                         <h4>Hypnose</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Ønsker du at stoppe med at ryge eller har du problemermed at slippe bestemte vaner som i længden sætter en stopper for ting du gerne vil? Så kan hypnoseterapi være en god mulighed at overveje. </p>
                         <a href="hypnose.php" class="btn btn-default">Læs mere</a>
                     </div>
                 </div>
@@ -148,7 +149,7 @@
                         <h4>Coaching i virksomheder</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Uanset størrelsen af et firma er medarbejdere noget af det vigtigste. Ved hjælp af coaching kan enkelte medarbejdere såvel som teams blive gjort stærkere, gladere og ikke mindst mere produktive. </p>
                         <a href="coaching_virksomhed.php" class="btn btn-default">Læs mere</a>
                     </div>
                 </div>
