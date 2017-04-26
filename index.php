@@ -103,14 +103,7 @@
                     </div><!-- /header-text -->
 			    </div>
 			</div>
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-		</div><!-- /carousel -->
+	<!-- /carousel -->
 	</div>
 </div>
 </header>
@@ -125,9 +118,11 @@
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Terapi </h4>
+                    <a><img src="img/cta_terapi.jpg" alt="terapi session"></a>
+                       <div class="panel-heading">
+                        <h4>Terapi</h4>
                     </div>
+                    
                     <div class="panel-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                         <a href="psykoterapi.php" class="btn btn-default">Læs mere</a>
@@ -136,8 +131,9 @@
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
+                   <a><img src="img/cta_hypnose.jpg" alt="Hypnose session"></a>
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-clock-o"></i> Hypnose</h4>
+                        <h4>Hypnose</h4>
                     </div>
                     <div class="panel-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
@@ -147,8 +143,9 @@
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
+                   <a><img src="img/cta_coaching_virksomheder.jpg" alt="Coaching for en virksomhed"></a>
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Coaching i virksomheder</h4>
+                        <h4>Coaching i virksomheder</h4>
                     </div>
                     <div class="panel-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>

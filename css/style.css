@@ -56,7 +56,8 @@
 
 /*Slider style from here: http://bootsnipp.com/snippets/featured/bootstrap-carousel-with-text*/
 .container {
-    margin-top: 0px;
+    margin-top: 10px;
+
 }
 
 /* Carousel Styles */
@@ -73,6 +74,15 @@
     width: 0;
 }
 
+@media (min-width:1200px){
+.container{width:100%;
+}}
+@media (min-width:768px){
+.container{width:100%}}
+
+@media (min-width:992px){
+.container{width:100%}}
+	
 .carousel-control.left,
 .carousel-control.right {
 	opacity: 1;
@@ -175,5 +185,53 @@
 /*other styling*/
 .cta {
 	padding-top: 2em;
+	padding-left: 1.5em;
 	
 }
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fff;
+}
+.panel-heading {
+    padding: 10px 0px 0px 0px;
+    border-bottom: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.panel {
+    border: 0px;
+	    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+    box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+.panel-body {
+    padding: 0px 0px 10px 0px;
+}
+
+.logo {
+	max-height: 75px;
+}
+.navbar-brand {
+	height: auto;
+}
+.carousel-inner {
+	margin-top: 50px;}
+
+@media (min-width: 768px){
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+    padding-top: 1.5em;
+	}}
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    font-size: 17px;
+}
+@media (min-width: 750px){
+.navbar-inverse .navbar-nav>li>a {
+    font-size: 12.5px;
+	}}
+@media (min-width: 980px){
+.navbar-inverse .navbar-nav>li>a {
+    font-size: 17px;
+	}}
