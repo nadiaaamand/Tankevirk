@@ -163,38 +163,27 @@
                 <h1 class="page-header">Tag styringen i dit privatliv og dit arbejdsliv</h1>
             </div>
             <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.3.7</strong>
-                    </li>
-                    <li>jQuery v1.11.1</li>
-                    <li>Font Awesome v4.2.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                <p>Lorem ipsum dolor sit amet, ad sale graeco torquatos eum, est ad epicuri sensibus forensibus. His dico nusquam ne. Sea aeque omnesque ex, ne eum meliore delectus, qui melius feugiat indoctum cu. Pertinax complectitur an usu, mea an euripidis intellegam comprehensam.<br><br>
+
+Per ne fierent facilisis. Omnium apeirian cu vix, detracto evertitur at pri. Ne erat dissentiet est, ei vel eros detracto. Vidit labitur quaestio te eum. Nec cu eruditi deseruisse disputationi, te vix errem docendi salutandi. In lorem concludaturque pro, facilisi expetenda omittantur quo in. Cum verear mandamus efficiendi ea, mei zril reformidans et, mel no putent aperiri persequeris.
+
+</p>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                <p>Unum propriae posidonium ei his. Suas soluta labore sit ne, imperdiet mnesarchum ei eam, mei ei gubergren deseruisse. Nam omnis semper vituperatoribus no, mel ad admodum lobortis. At per posse nulla deseruisse. Ea qui nemore mollis fabulas, ad illud omittam vis.<br><br>
+
+Vix cu vidit autem intellegat. Essent gloriatur sadipscing id duo, ad quas mentitum vituperatoribus pro. In pro viderer fuisset, ius sonet cetero ad. Et omnes sanctus adipisci his, ei mea purto munere maluisset, te ius fugit conclusionemque. Eu nec molestiae delicatissimi. Has dolores probatus id, mel cu solum intellegat.
+
+.</p>
             </div>
         </div>
         <!-- /.row -->
+</div>
 
-        <hr
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
+<?php 
+	include 'footer.php';
+?>
+    
     <!-- /.container -->
 
     <!-- jQuery -->
