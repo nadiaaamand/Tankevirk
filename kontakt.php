@@ -37,7 +37,7 @@
 ?>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container space">
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
@@ -115,6 +115,7 @@
 
         </div>
         <!-- /.row -->
+	</div>
 
         <?php 
 	include 'footer.php';
