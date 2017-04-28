@@ -1,4 +1,9 @@
-<!-- Navigation -->
+<?php 
+$curpage = basename ($_SERVER['PHP_SELF']);
+//Using this cause you can't use a class directly since the class is on all pages - instead I have used an if statement --> if the current page is e.g. p5 the echo (show) that the class active. The $_server is a super global variable which holds information about header, locations.
+?>
+	
+   <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,29 +21,29 @@
                 <ul class="nav navbar-nav navbar-right">
                    
                     <li>
-                        <a href="om.php">Om Tankevirk</a>
+                        <a href="om.php"<?php if($curpage == 'om.php') {echo 'class="active"';}?>>Om Tankevirk</a>
                     </li>
         
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Private <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="eksamensangst.php">Eksamensangst</a>
+                                <a href="eksamensangst.php"<?php if($curpage == 'eksamensangst.php') {echo 'class="active"';}?>>Eksamensangst</a>
                             </li>
                             <!-- Upcoming dropdown system found here: http://bootsnipp.com/snippets/featured/multi-level-dropdown-menu-bs3-->
                              <li class="dropdown-submenu"><a tabindex="-1" href="#">Terapi</a>
                 <ul class="dropdown-menu">
-					<li><a tabindex="-1" href="samtaleterapi.php">Samtaleterapi</a></li>
+					<li><a tabindex="-1" href="samtaleterapi.php<?php if($curpage == 'samtaleterapi.php') {echo 'class="active"';}?>">Samtaleterapi</a></li>
                   <li class="dropdown-submenu">
-                    <a href="psykoterapi.php">Psykoterapi</a>
+                    <a href="psykoterapi.php"<?php if($curpage == 'psykoterapi.php') {echo 'class="active"';}?>>Psykoterapi</a>
                     <ul class="dropdown-menu">
-                        <li><a href="nlp.php">NLP</a></li>
+                        <li><a href="nlp.php"<?php if($curpage == 'nlp.php') {echo 'class="active"';}?>>NLP</a></li>
 					  </ul>
-					  <li><a tabindex="-1" href="tre.php">Trauma Release Exercises</a></li>
+					  <li><a tabindex="-1" href="tre.php"<?php if($curpage == 'tre.php') {echo 'class="active"';}?>>Trauma Release Exercises</a></li>
 					  </ul>
 					</li></li>
                           <li>
-                                <a href="hypnose.php">Hypnose</a>
+                                <a href="hypnose.php"<?php if($curpage == 'hypnose.php') {echo 'class="active"';}?>>Hypnose</a>
                             </li>
                            <li class="dropdown-submenu"><a tabindex="-1" href="coaching.php">Coaching</a>
                 <ul class="dropdown-menu">
@@ -63,16 +68,16 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="blog.php">Blog</a>
+                        <a href="blog.php"<?php if($curpage == 'blog.php') {echo 'class="active"';}?>>Blog</a>
                     </li>
                     <li>
-                        <a href="aktuelt.php">Aktuelt</a>
+                        <a href="aktuelt.php"<?php if($curpage == 'aktuelt.php') {echo 'class="active"';}?>>Aktuelt</a>
                     </li>
                     <li>
-                        <a href="priser.php">Priser</a>
+                        <a href="priser.php"<?php if($curpage == 'priser.php') {echo 'class="active"';}?>>Priser</a>
                     </li>
                     <li>
-                        <a href="kontakt.php">Kontakt</a>
+                        <a href="kontakt.php"<?php if($curpage == 'kontakt.php') {echo 'class="active"';}?>>Kontakt</a>
                     </li>
                 </ul>
             </div>

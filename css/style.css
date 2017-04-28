@@ -210,6 +210,10 @@
     margin: 40px 0 20px;
     border-bottom: 0px;
 }
+.navbar-inverse .navbar-nav>li>a.active {
+	color: #fff;
+	
+}
 /*------------------------Footer style--------------------------*/
 .footer {
 	background-color: #222;
@@ -228,7 +232,7 @@ footer {
 }
 .icons {
 	font-size: 36px;
-	color: #0C5062;
+	color: #0F6880;
 	padding: 20px 14px 0;
 	
 }
@@ -237,7 +241,7 @@ footer {
 	transition-duration: 0.7s;
 }
 a {
-	color: #0C5062;
+	color: #0E6076;
 	text-decoration: none;
 }
 a:hover {
