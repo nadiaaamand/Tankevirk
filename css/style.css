@@ -214,6 +214,14 @@
 	color: #fff;
 	
 }
+.dropdown-menu>li>a .active {
+	color: #1687a6;
+	
+}
+.active {
+	color: #1687a6;	
+	
+}
 
 .space {
 	margin-top: 4em;	
