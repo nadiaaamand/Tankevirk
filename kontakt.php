@@ -42,8 +42,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Kontakt
-                    <small>Tankevirk</small>
+                <h1 class="page-header">Kontakt Tankevirk
 				</h1>
             </div>
         </div>
@@ -67,18 +66,14 @@
                 </p>
         
             </div>
-            <!-- Map Column -->
-            <div class="col-md-8">
-                <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.7135601761734!2d10.785577815785821!3d55.31062478043738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d3eef1f2a1675%3A0x54b632727981331d!2sDronningensvej+7%2C+5800+Nyborg!5e0!3m2!1sen!2sdk!4v1493209683592" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
+            
+        
         <!-- /.row -->
 
         <!-- Contact Form -->
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <h2>Skriv til mig</h2>
                 <p>Send mig en besked hvis du vil booke en session hos mig eller blot ønsker at vide mere.</p>
                 <form name="sentMessage" id="contactForm" novalidate>
@@ -114,8 +109,16 @@
             </div>
 
         </div>
+        </div>
         <!-- /.row -->
+        <!-- Map Column -->
+           <div class="row">
+            <div class="col-md-12">
+                <!-- Embedded Google Map -->
+                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.7135601761734!2d10.785577815785821!3d55.31062478043738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d3eef1f2a1675%3A0x54b632727981331d!2sDronningensvej+7%2C+5800+Nyborg!5e0!3m2!1sen!2sdk!4v1493209683592" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
 	</div>
+        </div>
 
         <?php 
 	include 'footer.php';

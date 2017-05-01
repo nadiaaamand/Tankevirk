@@ -29,7 +29,7 @@
                         <p>
                         <a href="coaching.php">Coaching</a><br>
                         <a href="coaching_virksomhed.php">Coaching i virksomheder</a><br>
-                        <a href="detsigerkunderne.php">Det siger kunderne</a><br>
+                        <a href="detsigerkunder.php">Det siger kunderne</a><br>
                         <a href="erhvervskundesiger.php">Det siger erhvervskunderne</a><br>
                         <a href="kontakt.php">Kontakt</a></p>
                     </div>

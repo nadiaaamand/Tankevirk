@@ -71,7 +71,7 @@ $curpage = basename ($_SERVER['PHP_SELF']);
                         <a href="blog.php"<?php if($curpage == 'blog.php') {echo 'class="active"';}?>>Blog</a>
                     </li>
                     <li>
-                        <a href="aktuelt.php"<?php if($curpage == 'aktuelt.php') {echo 'class="active"';}?>>Aktuelt</a>
+                        <a href="#">Aktuelt</a>
                     </li>
                     <li>
                         <a href="priser.php"<?php if($curpage == 'priser.php') {echo 'class="active"';}?>>Priser</a>
