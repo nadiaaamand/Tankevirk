@@ -52,7 +52,9 @@ session_start();
 						<button type='submit'>LOGIN</button>
 					</form>";
 			}
-			?>
+			
+	?>
+		
 		
 		</div>
 </div>
