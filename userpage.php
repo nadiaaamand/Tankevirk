@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="da">
 
@@ -31,6 +34,7 @@
 </head>
 
 <body>
+
 <div class="row">
 <div class="col-lg-6">
 			<?php
