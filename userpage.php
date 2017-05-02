@@ -37,6 +37,8 @@ session_start();
 
 <div class="row">
 <div class="col-lg-6">
+		<h1>Velkommen</h1>
+		<p>Login for at opdatere dine sider eller lave et nyt blogindslag.</p>
 			<?php
 			if (isset($_SESSION['id'])){
 				echo "<form action='logout.php'>
