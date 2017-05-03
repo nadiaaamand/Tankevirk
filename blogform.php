@@ -36,12 +36,12 @@
   <script>
   $(document).ready(function() {
     $("#datepicker").datepicker();
+	  //Found the way to change dateformat here: http://api.jqueryui.com/datepicker/#option-dateFormat
 	  $( ".selector" ).datepicker({
   dateFormat: "yy-mm-dd"
 });
 	  // Getter
 var dateFormat = $( ".selector" ).datepicker( "option", "dateFormat" );
- 
 // Setter
 $( ".selector" ).datepicker( "option", "dateFormat", "yy-dd-mm" );
   });
@@ -52,10 +52,10 @@ $( ".selector" ).datepicker( "option", "dateFormat", "yy-dd-mm" );
 
 <body>
 						<form id='blogform' action='form.php' enctype="multipart/form-data" method='POST' >
-						<input type='text' name='title' placeholder='Title'><br>
-						<input id='datepicker' class="selector" type='date' name='date' placeholder='Date'><br>
-						<textarea type='text' cols="85" rows="20" name="text"></textarea><br>
-   						<p>Upload a header image:</p>
+						<input type='text' name='title' placeholder='Title' required><br>
+						<input id='datepicker' class="selector" type='date' name='date' placeholder='Dato'><br>
+						<textarea type='text' cols="85" rows="20" name="text" required></textarea><br>
+   						<p>Upload et header billede:</p>
     					<input type='file' name='fileToUpload'>
 						
 							<br><br>
