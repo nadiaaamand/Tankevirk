@@ -200,6 +200,7 @@
 .h2, h2 {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	font-size: 22px;
 }
 .navbar-inverse {
     background-color: #222;
@@ -239,6 +240,9 @@ form {
     min-height: 1px;
     padding-left: 25px;
 	padding-right: 25px;
+}
+.morespace {
+	margin-top: 6em;
 }
 /*------------------------Footer style--------------------------*/
 .footer {

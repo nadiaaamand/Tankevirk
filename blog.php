@@ -52,9 +52,28 @@
         <div class="row">
             
             <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <p></p>
-            </div>
+            <div class="col-md-8">
+                <?php
+			
+						
+			//Fetching title, date and text. Took insporation from our blog project from 2nd semester
+			require_once 'dbcon.php';
+			$sql = "SELECT title, date, text FROM blog";
+			$result = $conn->query($sql);
+			if ($result->num_rows > 0) { //if it's not empty
+								
+			// output data of each row
+			while ($row = $result->fetch_assoc()) {
+					echo "<h2>".$row['title']."</h2>";
+					echo "<p>".$row['date']."</p>";
+					echo "<p>".$row['text']."</p>";
+								}
+					} else {
+					echo "No available blogposts to choose";
+							}	
+
+				?>
+       </div>
 
        
         </div>
