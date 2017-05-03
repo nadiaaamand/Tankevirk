@@ -6,7 +6,6 @@ $title = $_POST['title'];
 $date = $_POST['date'];
 $text = $_POST['text'];
 $target_file = $_POST['image'];
-$bid = $_POST['bid'];
 
 
 
@@ -21,17 +20,8 @@ move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file); //tmp_nam
 }else {
 	$uploadOk = false;
 }
-
-
-//error handling: Title and text in blog form should be filled out
-if (empty($title)) {
-	header("Location: blogform.php?error=empty");
-	exit();
-} 
-	
-			else {
 				
-				if($uploadOk){ // with image
+				if($uploadOk == 1){ // with image
 					$sql = "INSERT INTO blog (title, date, text, image) 
 					VALUES ('$title', '$date', '$text', '$target_file')";
 					$result = mysqli_query($conn, $sql);
@@ -44,7 +34,7 @@ if (empty($title)) {
 					$sql = "INSERT INTO blog (title, date, text) 
 					VALUES ('$title', '$date', '$text')";
 					echo "<script type='text/javascript'>
-					alert('Du har lavet et nyt blogindlæg uden head image se det under blog.');
+					alert('Du har lavet et nyt blogindlæg uden header billede se det under blog.');
 					window.location = 'administration.php';
 					</script>";
 					
@@ -63,6 +53,6 @@ if (empty($title)) {
 					</script>";
 				}
 				
-			}
+			
 
 ?>

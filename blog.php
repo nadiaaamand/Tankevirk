@@ -64,9 +64,11 @@
 								
 			// output data of each row
 			while ($row = $result->fetch_assoc()) {
+					
 					echo "<h2>".$row['title']."</h2>";
 					echo "<p>".$row['date']."</p>";
 					echo "<p>".$row['text']."</p>";
+				
 								}
 					} else {
 					echo "No available blogposts to choose";
