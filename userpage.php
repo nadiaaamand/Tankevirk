@@ -33,7 +33,7 @@ session_start();
 
 </head>
 
-<body>
+<body class="less">
 
 <div class="row">
 <div class="col-lg-6">

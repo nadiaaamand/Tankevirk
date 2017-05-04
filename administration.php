@@ -44,7 +44,7 @@
 		} else {
 	?>
 
-        <!-- Page Heading/Breadcrumbs -->
+        <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
         
@@ -77,11 +77,26 @@
 					}
 
 ?>
+<h2>Oversigt over dine sider:</h2><br>	
+         <?php
+	//This code is taken from my last project on third semester (One Bowl)//
+			
+			$sql = "SELECT title FROM pages";
+			$result = $conn->query($sql);
+			if ($result->num_rows > 0) { //if it's not empty
+								
+			// output data of each row
+			while ($row = $result->fetch_assoc()) {
+				echo "<p>".$row[title]."</p>";
+			}
+			}
+?>	
+<hr><br>
 <p>Husk at logge ud når du er færdig!</p>
 <?php
 			if (isset($_SESSION['id'])){
 				echo "<form id='loginform' action='logout.php'>
-						<button>LOG OUT</button>
+						<button>LOG UD</button>
 						</form>";
 			} 
 			
@@ -89,7 +104,30 @@
 	
 				</div>
           <div class="col-md-6">
-				</div>
+          <!-- Found a way to make button redirect elsewhere here: http://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link-->
+          <form action="blogform.php">
+          <button>Lav et nyt blogindlæg</button>
+		</form>
+        <h2>Oversigt over blogindlæg:</h2><br>	
+         <?php
+	//This code is taken from my last project on third semester (One Bowl)//
+			
+			$sql = "SELECT title FROM blog order by bid desc";
+			$result = $conn->query($sql);
+			if ($result->num_rows > 0) { //if it's not empty
+								
+			// output data of each row
+			while ($row = $result->fetch_assoc()) {
+				echo "<p>".$row[title]."</p>";	
+				echo "<form action='deleteblog.php' method='post'>";
+			 echo "<button type='submit' value='Slet blogindlæg'>Slet blogindlæg</button>";	
+				echo "</form>";
+			}
+			}
+?>	
+         
+         
+          </div>
            </div>
             </div>
 

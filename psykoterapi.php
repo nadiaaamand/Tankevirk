@@ -42,8 +42,20 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Psykoterapi
-				</h1>
+                                    <?php
+	//This code is taken from my last project on third semester (One Bowl)//
+			require_once 'dbcon.php';
+			$sql = "SELECT title, text FROM pages where pid=4";
+			$result = $conn->query($sql);
+			if ($result->num_rows > 0) { //if it's not empty
+								
+			// output data of each row
+			while ($row = $result->fetch_assoc()) {
+				echo "<h1 class='page-header'>".$row[title]."</h1>";
+				echo "<p class='multic p'>".$row[text]."</p>";
+			}
+			}
+?>	
             </div>
         </div>
         <!-- /.row -->

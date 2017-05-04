@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="da">
 
@@ -38,7 +41,7 @@
     $("#datepicker").datepicker();
 	  //Found the way to change dateformat here: http://api.jqueryui.com/datepicker/#option-dateFormat
 	  $( ".selector" ).datepicker({
-  dateFormat: "yy-mm-dd"
+  dateFormat: "yy-dd-mm"
 });
 	  // Getter
 var dateFormat = $( ".selector" ).datepicker( "option", "dateFormat" );
@@ -50,21 +53,34 @@ $( ".selector" ).datepicker( "option", "dateFormat", "yy-dd-mm" );
 
 </head>
 
-<body>
-						<form id='blogform' action='form.php' enctype="multipart/form-data" method='POST' >
-						<input type='text' name='title' placeholder='Title' required><br>
-						<input id='datepicker' class="selector" type='date' name='date' placeholder='Dato'><br>
-						<textarea type='text' cols="85" rows="20" name="text" required></textarea><br>
-   						<p>Upload et header billede:</p>
-    					<input type='file' name='fileToUpload'>
+<body class="less">
+		<div class="container">
+						   <?php if(!isset($_SESSION['id'])){ // if not logged in:
+		die("<p class='morespace'>Please login to see the content. <br><br> To login go to: <a href='userpage.php'>Userpage</a></p>");
+		} else {
+	?>
+		  <!-- Page Heading -->
+			<div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">Nyt blogindlæg</h1>
+           <p>Lav dit blogindlæg her - husk der både skal være en titel og tilhørende tekst.</p>
+           
+			<form id='blogform' action='form.php' enctype="multipart/form-data" method='POST' >
+			<input type='text' name='title' placeholder='Title' required><br>
+			<input id='datepicker' class="selector" type='date' name='date' placeholder='Dato'><br>
+			<textarea type='text' cols="85" rows="20" name="text" required></textarea><br>
+   			<p>Upload et header billede:</p>
+    		<input type='file' name='fileToUpload'>
 						
 							<br><br>
 							
-						<button type='submit'>Læg op</button>
-							</form>
-<script>
-	
-	</script>
+			<button type='submit'>Læg op</button>
+			</form>
+				</div>
+			</div>
+	</div>
+	<?php
+};?>
 </body>
 
 </html>
