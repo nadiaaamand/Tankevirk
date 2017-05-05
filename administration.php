@@ -80,16 +80,16 @@
 <h2>Oversigt over dine sider:</h2><br>	
          <?php
 	//This code is taken from my last project on third semester (One Bowl)//
+			$sql = "SELECT pid, title FROM pages";
+			$stmt = $conn->prepare($sql);
+			$stmt->execute();
+			$stmt->bind_result($pid, $title);
+
+			while($stmt->fetch()){
+				echo '<li><a class="pdetails" href="updatepage.php?pid='.$pid.'">'.$title.'</a></li>'.PHP_EOL;
+				
+			}
 			
-			$sql = "SELECT title FROM pages";
-			$result = $conn->query($sql);
-			if ($result->num_rows > 0) { //if it's not empty
-								
-			// output data of each row
-			while ($row = $result->fetch_assoc()) {
-				echo "<p>".$row[title]."</p>";
-			}
-			}
 ?>	
 <hr><br>
 <p>Husk at logge ud når du er færdig!</p>
@@ -112,25 +112,29 @@
          <?php
 	//This code is taken from my last project on third semester (One Bowl)//
 			
-			$sql = "SELECT title FROM blog order by bid desc";
-			$result = $conn->query($sql);
-			if ($result->num_rows > 0) { //if it's not empty
+			$sql = "SELECT bid, title FROM blog order by bid desc";
+			$stmt = $conn->prepare($sql);
+			$stmt->execute();
+			$stmt->bind_result($bid, $title);
 								
 			// output data of each row
-			while ($row = $result->fetch_assoc()) {
-				echo "<p>".$row[title]."</p>";	
-				echo "<form action='deleteblog.php' method='post'>";
-			 echo "<button type='submit' value='Slet blogindlæg'>Slet blogindlæg</button>";	
-				echo "</form>";
+			while($stmt->fetch()){
+			echo '<li><a class="pdetails" href="updateblog.php?bid='.$bid.'">'.$title.'</a></li>'.PHP_EOL;
 			}
-			}
+			
 ?>	
          
          
           </div>
            </div>
             </div>
-
+	<!--echo "<p>".$title."</p>";
+					echo "<form action='updateblog.php?bid='.$bid.' method='post'>";
+			 echo "<button type='submit' value='Opdater blogindlæg'>Opdater blogindlæg</button>";
+				echo "<br>";
+				echo "<form action='deleteblog.php' method='post'>";
+			 echo "<button type='submit' value='Slet blogindlæg'>Slet blogindlæg</button>";	
+				echo "</form>";-->
        
         
         <!-- /.row -->
@@ -139,7 +143,7 @@
         <?php 
 	include 'footer.php';
 };
-?>
+	?>
     <!-- /.container -->
 
     <!-- jQuery -->

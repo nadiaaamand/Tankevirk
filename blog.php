@@ -67,7 +67,7 @@
 					
 					echo "<h2>".$row['title']."</h2>";
 					echo "<p class='date'>".$row['date']."</p>";
-					echo "<p class='multic'>".$row['text']."</p>";
+					echo "<p class='multic p'>".$row['text']."</p>";
 					echo "<hr>";
 								}
 					} else {

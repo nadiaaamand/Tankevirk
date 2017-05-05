@@ -60,23 +60,37 @@
             </div>
         </div>
         <!-- /.row -->
-
+</div>
         <!-- Content Row -->
-        <div class="row">
+        <footer>
+           <div class="row">
             
             <!-- Contact Details Column -->
-            <div class="col-md-6">
-                <p></p>
-        
-            </div>
-				<div class="col-md-6">
-                <p></p>
-        
+            <div class="col-md-12 medlembg">
+                <div class="col-md-4">
+                <div class="panel panel-default">
+                <div class="panel-body">
+                <a href="https://psykoterapeutforeningen.dk/find-terapeut/tankevirk/" target="_blank"><img class="medlem" src="img/DPF_LogoMedlem.png" height="80px"></a>
+					</div></div></div>
+                
+                <div class="col-md-4">
+                <div class="panel panel-default">
+                <div class="panel-body">
+                <a><img class="medlem" src="img/NGH-mærkat.png" height="80px"></a>
+					</div></div></div>
+               
+                <div class="col-md-4">
+                <div class="panel panel-default">
+                <div class="panel-body">
+                <a><img class="medlem" src="img/tre_logo.png" height="80px"></a>
+					</div></div></div>
+        		
             </div>
        
         </div>
+        </footer>
         <!-- /.row -->
-	</div>
+	
 
         <?php 
 	include 'footer.php';
