@@ -13,7 +13,10 @@ $stmt->bind_param('si', $text, $pid);
 $stmt->execute();
 
 if ($stmt->affected_rows >0 ){
-	echo 'Information Updated';
+	echo "<script type='text/javascript'>
+					alert('Siden er hermed opdateret');
+					window.location = 'administration.php'; //avoiding white/ blank page
+					</script>";
 }
 else {
 	echo 'No change';

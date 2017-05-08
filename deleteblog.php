@@ -12,7 +12,11 @@ $stmt = $conn->prepare($sql);
 	while ($stmt->fetch()){}
 
 if ($stmt->affected_rows >0 ){
-	header( 'Location:administration.php');
+	// found at: stackoverflow 
+					echo "<script type='text/javascript'>
+					alert('Er du sikker på du vil slette?');
+					window.location = 'administration.php'; //avoiding white/ blank page
+					</script>";
 }
 else {
 	echo 'Ingen ændring - blogindlæg findes stadig..';
