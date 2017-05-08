@@ -86,7 +86,7 @@
 			$stmt->bind_result($pid, $title);
 
 			while($stmt->fetch()){
-				echo '<li><a class="pdetails" href="updatepage.php?pid='.$pid.'">'.$title.'</a></li>'.PHP_EOL;
+				echo '<li>'.$title.' <a class="pdetails" href="updatepage.php?pid='.$pid.'">(Opdater)</a></li>';
 				
 			}
 			
@@ -119,7 +119,7 @@
 								
 			// output data of each row
 			while($stmt->fetch()){
-			echo '<li><a class="pdetails" href="updateblog.php?bid='.$bid.'">'.$title.'</a></li>'.PHP_EOL;
+			echo '<li>'.$title.' <a class="pdetails" href="updateblog.php?bid='.$bid.'">(Opdater)</a></li>';
 			}
 			
 ?>	
