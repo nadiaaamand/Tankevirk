@@ -1,5 +1,5 @@
 <?php
-$bid = filter_input(INPUT_POST, 'bid', FILTER_VALIDATE_INT) or die('Missing/illegal parameter1');
+$bid = filter_input(INPUT_GET, 'bid', FILTER_VALIDATE_INT) or die('Missing/illegal parameter');
 
 
 require_once 'dbcon.php';
@@ -12,7 +12,7 @@ $stmt = $conn->prepare($sql);
 	while ($stmt->fetch()){}
 
 if ($stmt->affected_rows >0 ){
-	echo 'Blogindlæg er slettet';
+	header( 'Location:administration.php');
 }
 else {
 	echo 'Ingen ændring - blogindlæg findes stadig..';

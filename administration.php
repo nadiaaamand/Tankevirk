@@ -119,7 +119,7 @@
 								
 			// output data of each row
 			while($stmt->fetch()){
-			echo '<li>'.$title.' <a class="pdetails" href="updateblog.php?bid='.$bid.'">(Opdater)</a></li>';
+			echo '<li>'.$title.' <a class="pdetails" href="updateblog.php?bid='.$bid.'">(Opdater)</a> <a class="pdetails" href="deleteblog.php?bid='.$bid.'">(Slet)</a></li>';
 			}
 			
 ?>	
