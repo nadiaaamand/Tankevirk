@@ -66,7 +66,7 @@ session_start();
 				echo "<form id='blogform' action='update_blog_form.php' enctype='multipart/form-data' method='POST'>";
 				echo "<textarea type='text' cols='85' rows='20' name='text'>" . $text . "</textarea>";
 				echo "<br>";
-				echo "<button type='submit' value='Opdater blogindlæg'>Opdater blogindlæg</button>";
+				echo "<button class='btn btn-default' type='submit' value='Opdater blogindlæg'>Opdater blogindlæg</button>";
 				echo "</form>";
 					}
 				?>

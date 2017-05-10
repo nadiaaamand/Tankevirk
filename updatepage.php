@@ -67,7 +67,7 @@ session_start();
 				echo "<input type='hidden' name='$pid' value='$pid'>";
 				echo "<textarea type='text' cols='85' rows='20' name='$text'>" . $text . "</textarea>";
 				echo "<br>";
-				echo "<button type='submit' value='Opdater siden'>Opdater siden</button>";
+				echo "<button class='btn btn-default' type='submit' value='Opdater siden'>Opdater siden</button>";
 				echo "</form>";
 					}
 				?>

@@ -74,7 +74,7 @@ $( ".selector" ).datepicker( "option", "dateFormat", "yy-dd-mm" );
 						
 							<br><br>
 							
-			<button type='submit'>Læg op</button>
+			<button class="btn btn-default" type='submit'>Læg op</button>
 			</form>
 			<p><b>Tips til gøre din blog visuelt bedre:</b></p>
 			<p>Ønsker du har bruge nogle af disse skal du blot kopiere dem op i tekstfeltet og erstatte "teksten".</p>

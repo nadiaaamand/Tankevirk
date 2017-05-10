@@ -57,7 +57,7 @@
 				<input class='signin' type='email' name='email' placeholder='Email' required><br>
 				<input class='signin' type='text' name='username' placeholder='Username' required><br>
 				<input class='signin' type='password' name='pwd' placeholder='Password' required><br>
-				<button id='submit' type='submit'>Sign Up</button>
+				<button id='submit' class='btn btn-default' type='submit'>Sign Up</button>
 		</form>";
 		}
 ?>

@@ -69,11 +69,12 @@
             
             <div class="col-md-6">
             <br>
-            <p class="page-header">Husk at logge ud når du er færdig!</p>
+            
 <?php
 			if (isset($_SESSION['id'])){
-				echo "<form id='loginform' action='logout.php'>
-						<button class='btn btn-default'>LOG UD</button>
+				echo "<form class='space' id='loginform' action='logout.php'>
+						<p>Husk at logge ud når du er færdig!</p>
+						<button class='btn btn-default'>Log ud</button>
 						</form>";
 			} 
 			
