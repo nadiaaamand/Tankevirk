@@ -156,7 +156,6 @@
             </div>
         </div>
         <!-- /.row -->
-<hr>
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">

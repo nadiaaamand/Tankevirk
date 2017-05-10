@@ -14,20 +14,15 @@ $stmt->execute();
 
 if ($stmt->affected_rows >0 ){
 	echo "<script type='text/javascript'>
-					alert('Siden er hermed opdateret');
-					window.location = 'administration.php'; //avoiding white/ blank page
-					</script>";
+			alert('Siden er hermed opdateret');
+			window.location = 'administration.php'; //avoiding white/ blank page
+			</script>";
 }
 else {
-	echo 'No change';
+	echo "<script type='text/javascript'>
+			alert('Siden er ikke blevet opdateret - Prøv igen');
+			window.location = 'administration.php'; //avoiding white/ blank page
+			</script>";
 
 }
-//if ($stmt->affected_rows >0 ){
-	
-	//header("Location: index.php");
-//}
-//else {
-	
-	//header("Location: administration.php");
-//}
 ?>
