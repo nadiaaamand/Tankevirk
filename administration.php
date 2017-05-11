@@ -1,3 +1,6 @@
+ <?php 
+	include 'navigation.php';
+?>
 <!DOCTYPE html>
 <html lang="da">
 
@@ -32,15 +35,12 @@
 
 <body>
 
- <?php 
-	include 'navigation.php';
-?>
     
 
     <!-- Page Content -->
     <div class="container space">
-        <?php if(!isset($_SESSION['id'])){ // if not logged in:
-		die("<p class='morespace'>Please login to see the content. <br><br> To login go to: <a href='userpage.php'>Userpage</a></p>");
+        <?php if(!isset($_SESSION["id"])){ // if not logged in:
+		die('<p class="morespace">Please login to see the content. <br><br> To login go to: <a href="userpage.php">Userpage</a></p>');
 		} else {
 	?>
 
@@ -52,15 +52,15 @@
 				</h1>
            <?php
 	//This code is taken from my last project on third semester (One Bowl)//
-			$uid = $_SESSION['id'];
+			$uid = $_SESSION["id"];
 			require_once 'dbcon.php';
-			$sql = "SELECT name FROM user WHERE uid=?";
+			$sql = 'SELECT name FROM user WHERE uid=?';
 			$stmt = $conn->prepare($sql);
 			$stmt->bind_param('i', $uid);
 			$stmt->execute();
 			$stmt->bind_result($name);
 			while ($stmt->fetch()){
-				echo "Hej " . '<b>' . $name . '</b>' . '!' ."<br><br>"; 	 
+				echo 'Hej ' . "<b>" . $name . "</b>" . "!" .'<br><br>'; 	 
 				}
 
 ?>
@@ -71,11 +71,11 @@
             <br>
             
 <?php
-			if (isset($_SESSION['id'])){
-				echo "<form class='space' id='loginform' action='logout.php'>
+			if (isset($_SESSION["id"])){
+				echo '<form class="space" id="loginform" action="logout.php">
 						<p>Husk at logge ud når du er færdig!</p>
-						<button class='btn btn-default'>Log ud</button>
-						</form>";
+						<button class="btn btn-default">Log ud</button>
+						</form>';
 			} 
 			
 			?>
@@ -94,9 +94,10 @@
 
 
 <h2>Oversigt over dine sider:</h2><br>	
-         <?php
+        
+          <?php
 	//This code is taken from my last project on third semester (One Bowl)//
-			$sql = "SELECT pid, title FROM pages";
+			$sql = 'SELECT pid, title FROM pages';
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
 			$stmt->bind_result($pid, $title);
@@ -112,26 +113,37 @@
 				</div>
           <div class="col-md-6">
           
-        <h2>Oversigt over blogindlæg:</h2><br>	
-        <!-- Found a way to make button redirect elsewhere here: http://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link-->
+        <h2>Oversigt over dine blogindlæg:</h2><br>	
+         <!-- Found a way to make button redirect elsewhere here: http://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link-->
+          
           <form action="blogform.php">
           <button class="btn btn-default">Lav et nyt blogindlæg</button>
 		</form>
+        
          <?php
 	//This code is taken from my last project on third semester (One Bowl)//
 			
-			$sql = "SELECT bid, title FROM blog order by bid desc";
+			$sql = 'SELECT bid, title FROM blog order by bid desc';
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
 			$stmt->bind_result($bid, $title);
 								
 			// output data of each row
+			//Found the confirm pop up here: https://www.w3schools.com/jsref/met_win_confirm.asp
 			while($stmt->fetch()){
-			echo '<li class="back">'.$title.' <a class="pdetails" href="updateblog.php?bid='.$bid.'">(Opdater)</a> <a class="pdetails" href="deleteblog.php?bid='.$bid.'">(Slet)</a></li>';
+			echo '<li class="back">'.$title.' <a class="pdetails" href="updateblog.php?bid='.$bid.'">(Opdater)</a> 
+			
+			<form action="deleteblog.php" onsubmit="return confirm(\'Er du sikker på du vil slette dette blogindlæg?\');">
+				<input type="hidden" name="bid" value="'.$bid.'" />
+				<input class="slet" type="submit" name="Submit" value="Slet blogindlæg" />
+			</form>
+			
+			</li>';
 			}
 			
 ?>	
          
+        
          
           </div>
            </div>

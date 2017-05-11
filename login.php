@@ -15,7 +15,7 @@ $hash = password_verify($pwd, $hash_pwd);
 
 /*If the $hash is false = error message*/
 if($hash == 0){
-	header("Location: userpage.php?error=incorrect");
+	header('Location: userpage.php?error=incorrect');
 	exit();
 } else  {
 	$sql = "SELECT * FROM user WHERE username='$username' AND pwd='$hash_pwd'";
@@ -23,10 +23,11 @@ if($hash == 0){
 
 	// if there is no match from the database, do 'else'
 	if (!$row = mysqli_fetch_assoc($result)){
-		echo "<script type='text/javascript'>alert('Your email or password is incorrect. Please try again or contact you adminstrator');</script>";
+		echo '<script type="text/javascript">
+		alert("Your username or password is incorrect. Please try again or contact you adminstrator");</script>';
 	} else {
 		$_SESSION['id'] = $row['uid'];
-		header("Location: administration.php");
+		header('Location: administration.php');
 	}
 }
 ?>

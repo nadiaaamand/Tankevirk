@@ -57,17 +57,18 @@ session_start();
 	//This code is taken from my last project on third semester (One Bowl)//
 			
 			require_once 'dbcon.php';
-			$sql = "SELECT `text` FROM blog WHERE `bid`=?";
+			$sql = 'SELECT `text` FROM blog WHERE `bid`=?';
 			$stmt = $conn->prepare($sql);
 			$stmt->bind_param('i', $bid);
 			$stmt->execute();
 			$stmt->bind_result($text);
 			while ($stmt->fetch()){
-				echo "<form id='blogform' action='update_blog_form.php' enctype='multipart/form-data' method='POST'>";
-				echo "<textarea type='text' cols='85' rows='20' name='text'>" . $text . "</textarea>";
-				echo "<br>";
-				echo "<button class='btn btn-default' type='submit' value='Opdater blogindlæg'>Opdater blogindlæg</button>";
-				echo "</form>";
+				echo '<form id="blogform" action="update_blog_form.php" enctype="multipart/form-data" method="POST">';
+				echo '<input type="hidden" name="bid" value="'.$bid.'">';
+				echo '<textarea type="text" cols="85" rows="20" name="text">' . $text . '</textarea>';
+				echo '<br>';
+				echo '<button class="btn btn-default" type="submit" value="Opdater blogindlæg">Opdater blogindlæg</button>';
+				echo '</form>';
 					}
 				?>
         <p><b>Tips til gøre din blog visuelt bedre:</b></p>

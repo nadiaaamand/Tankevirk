@@ -36,8 +36,8 @@ session_start();
 <body class="less">
        <div class="container">
         <?php 
-		if(!isset($_SESSION['id'])){ // if not logged in:
-		die("<p class='morespace'>Please login to see the content. <br><br> To login go to: <a href='userpage.php'>Userpage</a></p>");
+		if(!isset($_SESSION["id"])){ // if not logged in:
+		die('<p class="morespace">Please login to see the content. <br><br> To login go to: <a href="userpage.php">Userpage</a></p>');
 		} else {
 	?>
 	<!-- Page Heading -->
@@ -57,18 +57,18 @@ session_start();
 	//This code is taken from my last project on third semester (One Bowl)//
 			
 			require_once 'dbcon.php';
-			$sql = "SELECT `text` FROM pages WHERE `pid`=?";
+			$sql = 'SELECT `text` FROM pages WHERE `pid`=?';
 			$stmt = $conn->prepare($sql);
 			$stmt->bind_param('i', $pid);
 			$stmt->execute();
 			$stmt->bind_result($text);
 			while ($stmt->fetch()){
-				echo "<form id='blogform' action='update_pages_form.php' enctype='multipart/form-data' method='POST'>";
-				echo "<input type='hidden' name='$pid' value='$pid'>";
-				echo "<textarea type='text' cols='85' rows='20' name='$text'>" . $text . "</textarea>";
-				echo "<br>";
-				echo "<button class='btn btn-default' type='submit' value='Opdater siden'>Opdater siden</button>";
-				echo "</form>";
+				echo '<form id="blogform" action="update_pages_form.php" method="POST">';
+				echo '<input type="hidden" name="pid" value="'.$pid.'">';
+				echo '<textarea type="text" cols="85" rows="20" name="text">' . $text . '</textarea>';
+				echo '<br>';
+				echo '<button class="btn btn-default" type="submit" value="Opdater siden">Opdater siden</button>';
+				echo '</form>';
 					}
 				?>
       

@@ -58,20 +58,20 @@
 						
 			//Fetching title, date and text. Took insporation from our blog project from 2nd semester
 			require_once 'dbcon.php';
-			$sql = "SELECT title, date, text FROM blog order by bid desc";
+			$sql = 'SELECT title, date, text FROM blog order by bid desc';
 			$result = $conn->query($sql);
 			if ($result->num_rows > 0) { //if it's not empty
 								
 			// output data of each row
 			while ($row = $result->fetch_assoc()) {
 					
-					echo "<h2>".$row['title']."</h2>";
-					echo "<p class='date'>".$row['date']."</p>";
-					echo "<p class='multic p'>".$row['text']."</p>";
-					echo "<hr>";
+					echo '<h2>'.$row["title"].'</h2>';
+					echo '<p class="date">'.$row["date"].'</p>';
+					echo '<p class="multic p">'.$row["text"].'</p>';
+					echo '<hr>';
 								}
 					} else {
-					echo "No available blogposts to choose";
+					echo 'No available blogposts to show';
 							}	
 
 				?>

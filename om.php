@@ -45,7 +45,7 @@
                      <?php
 	//This code is taken from my last project on third semester (One Bowl)//
 			require_once 'dbcon.php';
-			$sql = "SELECT title, text FROM pages where pid=1";
+			$sql = 'SELECT title, text FROM pages where pid=1';
 			$result = $conn->query($sql);
 			if ($result->num_rows > 0) { //if it's not empty
 								

@@ -41,12 +41,12 @@ session_start();
     $("#datepicker").datepicker();
 	  //Found the way to change dateformat here: http://api.jqueryui.com/datepicker/#option-dateFormat
 	  $( ".selector" ).datepicker({
-  dateFormat: "yy-dd-mm"
+  dateFormat: "yy-mm-dd"
 });
 	  // Getter
 var dateFormat = $( ".selector" ).datepicker( "option", "dateFormat" );
 // Setter
-$( ".selector" ).datepicker( "option", "dateFormat", "yy-dd-mm" );
+$( ".selector" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
   });
 	  
   </script>
@@ -56,7 +56,7 @@ $( ".selector" ).datepicker( "option", "dateFormat", "yy-dd-mm" );
 <body class="less">
 		<div class="container">
 						   <?php if(!isset($_SESSION['id'])){ // if not logged in:
-		die("<p class='morespace'>Please login to see the content. <br><br> To login go to: <a href='userpage.php'>Userpage</a></p>");
+		die('<p class="morespace">Please login to see the content. <br><br> To login go to: <a href="userpage.php">Userpage</a></p>');
 		} else {
 	?>
 		  <!-- Page Heading -->
@@ -79,7 +79,6 @@ $( ".selector" ).datepicker( "option", "dateFormat", "yy-dd-mm" );
 			<p><b>Tips til gøre din blog visuelt bedre:</b></p>
 			<p>Ønsker du har bruge nogle af disse skal du blot kopiere dem op i tekstfeltet og erstatte "teksten".</p>
 			<!-- Found out how to display html code on website here: http://stackoverflow.com/questions/2820453/display-html-code-in-html-->
-			<p><b>Lille overskift:</b> &lt;h3&gt;Ønsket tekst her&lt;/h3&gt;</p>
 			<p><b>Tyk tekst:</b> &lt;b&gt;Ønsket tekst her&lt;/b&gt;</p>
 			<p><b>Kursiv tekst:</b> &lt;i&gt;Ønsket tekst her&lt;/i&gt;</p>
 			<p><b>Bullet points:</b> &lt;li&gt;Ønsket tekst her&lt;/li&gt;</p>

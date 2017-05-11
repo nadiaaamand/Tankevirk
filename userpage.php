@@ -41,16 +41,16 @@ session_start();
 		<p>Login for at opdatere dine sider eller lave et nyt blogindslag.</p>
 			<?php
 			if (isset($_SESSION['id'])){
-				echo "<form action='logout.php'>
+				echo '<form action="logout.php">
 						<p>You are already logged in! <br> You can log out by pressing the log out button.</p>
 						<button>LOG OUT</button>
-						</form>";
+						</form>';
 			} else {
-				echo "<form id='signupform' action='login.php' method='POST'>
-						<input type='username' name='username' placeholder='Username'><br>
-						<input type='password' name='pwd' placeholder='Password'><br>
-						<button type='submit'>LOGIN</button>
-					</form>";
+				echo '<form id="signupform" action="login.php" method="POST">
+						<input type="username" name="username" placeholder="Username"><br>
+						<input type="password" name="pwd" placeholder="Password"><br>
+						<button class="btn btn-default" type="submit">LOGIN</button>
+					</form>';
 			}
 			
 	?>

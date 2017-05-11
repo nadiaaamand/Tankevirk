@@ -1,8 +1,6 @@
 <?php
-//$text = filter_input(INPUT_POST, '$text', FILTER_SANITIZE_STRING) or die('Missing/illegal parameter');
-//$bid = filter_input(INPUT_POST, '$pid', FILTER_VALIDATE_INT) or die('Missing/illegal parameter2');
-$text = $_POST['text'];
-$pid = $_POST['bid'];
+$text = filter_input(INPUT_POST, 'text', FILTER_SANITIZE_STRING) or die('Missing/illegal parameter');
+$bid = filter_input(INPUT_POST, 'bid', FILTER_VALIDATE_INT) or die('Missing/illegal parameter2');
 
 require_once 'dbcon.php';
 
