@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tankevirk - Refleksion til udvikling</title>
+    <title>Tankevirk - Psykoterapeut i Nyborg og omegn</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -103,6 +103,7 @@
                     </div><!-- /header-text -->
 			    </div>
 			</div>
+		</div>
 	<!-- /carousel -->
 	</div>
 </div>

@@ -92,7 +92,6 @@
                <div class="col-md-6">
                 
 
-
 <h2>Oversigt over dine sider:</h2><br>	
         
           <?php
@@ -109,10 +108,10 @@
 			}
 			
 ?>	
-	
+				  
 				</div>
           <div class="col-md-6">
-          
+        
         <h2>Oversigt over dine blogindlæg:</h2><br>	
          <!-- Found a way to make button redirect elsewhere here: http://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link-->
           
@@ -131,7 +130,7 @@
 			// output data of each row
 			//Found the confirm pop up here: https://www.w3schools.com/jsref/met_win_confirm.asp
 			while($stmt->fetch()){
-			echo '<li class="back">'.$title.' <a class="pdetails" href="updateblog.php?bid='.$bid.'">(Opdater)</a> 
+			echo '<li>'.$title.' <a class="pdetails" href="updateblog.php?bid='.$bid.'">(Opdater)</a> 
 			
 			<form action="deleteblog.php" onsubmit="return confirm(\'Er du sikker på du vil slette dette blogindlæg?\');">
 				<input type="hidden" name="bid" value="'.$bid.'" />
@@ -142,9 +141,7 @@
 			}
 			
 ?>	
-         
-        
-         
+			  
           </div>
            </div>
             </div>

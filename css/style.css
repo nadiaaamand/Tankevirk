@@ -283,7 +283,7 @@ h3 {
     background-color: #1687A6;
     border: 1px solid #1687A6;
     margin-right: 15px;
-	font-size: 13px;
+	font-size: 10px;
 	display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
@@ -301,6 +301,7 @@ h3 {
     user-select: none;
     background-image: none;
     border-radius: 4px;
+	margin-top: 5px;
 }
 .slet:hover{
 	color:#333;
@@ -310,6 +311,10 @@ h3 {
 	transition-duration: 0.7s;
 }
 
+.headimg{
+	width:50%;
+	margin-bottom: 20px;
+}
 /*------------------------Footer style--------------------------*/
 .footer {
 	background-color: #222;

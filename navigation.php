@@ -1,7 +1,7 @@
 <?php 
 session_start();
 $curpage = basename ($_SERVER['PHP_SELF']);
-//Using this cause you can't use a class directly since the class is on all pages - instead I have used an if statement --> if the current page is e.g. p5 the echo (show) that the class active. The $_server is a super global variable which holds information about header, locations.
+//Using this because you can't use a class directly since the class is on all pages - instead I have used an if statement --> if the current page is e.g. om.php it echos (show) that the class active. The $_server is a super global variable which holds information about header, locations.
 ?>
 	
    <!-- Navigation -->
@@ -34,7 +34,7 @@ $curpage = basename ($_SERVER['PHP_SELF']);
                             <!-- Upcoming dropdown system found here: http://bootsnipp.com/snippets/featured/multi-level-dropdown-menu-bs3-->
                              <li class="dropdown-submenu"><a tabindex="-1" href="#">Terapi</a>
                 <ul class="dropdown-menu">
-					<li><a tabindex="-1" href="samtaleterapi.php<?php if($curpage == 'samtaleterapi.php') {echo 'class="active"';}?>">Samtaleterapi</a></li>
+					<li><a tabindex="-1" href="samtaleterapi.php"<?php if($curpage == 'samtaleterapi.php') {echo 'class="active"';}?>>Samtaleterapi</a></li>
                   <li class="dropdown-submenu">
                     <a href="psykoterapi.php"<?php if($curpage == 'psykoterapi.php') {echo 'class="active"';}?>>Psykoterapi</a>
                     <ul class="dropdown-menu">
@@ -46,11 +46,11 @@ $curpage = basename ($_SERVER['PHP_SELF']);
                           <li>
                                 <a href="hypnose.php"<?php if($curpage == 'hypnose.php') {echo 'class="active"';}?>>Hypnose</a>
                             </li>
-                           <li class="dropdown-submenu"><a tabindex="-1" href="coaching.php">Coaching</a>
+                           <li class="dropdown-submenu"><a tabindex="-1" href="coaching.php"<?php if($curpage == 'coaching.php') {echo 'class="active"';}?>>Coaching</a>
                 <ul class="dropdown-menu">
-					<li><a tabindex="-1" href="hvordan_coaching.php">Hvordan foregår coaching?</a></li></ul>
+					<li><a tabindex="-1" href="hvordan_coaching.php" <?php if($curpage == 'hvordan_coaching.php') {echo 'class="active"';}?>>Hvordan foregår coaching?</a></li></ul>
                             <li>
-                                <a href="detsigerkunder.php">Det siger kunderne</a>
+                                <a href="detsigerkunder.php"<?php if($curpage == 'detsigerkunder.php') {echo 'class="active"';}?>>Det siger kunderne</a>
                             </li>
                         </ul>
                     </li>
@@ -58,13 +58,13 @@ $curpage = basename ($_SERVER['PHP_SELF']);
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Virksomheder <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="coaching_virksomhed.php">Coaching i virksomheder</a>
+                                <a href="coaching_virksomhed.php"<?php if($curpage == 'coaching_virksomhed.php') {echo 'class="active"';}?>>Coaching i virksomheder</a>
                             </li>
                             <li>
-                                <a href="kurser_kommunikation.php">Kurser i kommunikation</a>
+                                <a href="kurser_kommunikation.php"<?php if($curpage == 'kurser_kommunikation.php') {echo 'class="active"';}?>>Kurser i kommunikation</a>
                             </li>
                             <li>
-                                <a href="erhvervskundesiger.php">Det siger erhverskunderne</a>
+                                <a href="erhvervskundesiger.php"<?php if($curpage == 'erhvervskundesiger.php') {echo 'class="active"';}?>>Det siger erhverskunderne</a>
                             </li>
                         </ul>
                     </li>
@@ -75,7 +75,7 @@ $curpage = basename ($_SERVER['PHP_SELF']);
 					if($_SESSION["id"]) { 
 					  echo '<li><a href="administration.php"';
 						if($curpage == "administration.php") {
-						   echo ' class="active"';
+						   echo 'class="active"';
 				        } 
 					  echo '<a>Administration</a></li>';
 				 }?>

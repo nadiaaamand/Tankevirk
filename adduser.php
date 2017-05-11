@@ -12,6 +12,6 @@ $sql = "INSERT INTO user (name, email, username, pwd) VALUES ('$name', '$email',
 
 $result = mysqli_query($conn, $sql);
 
-header("Location: userpage.php")
+header('Location: userpage.php')
 
 ?>
