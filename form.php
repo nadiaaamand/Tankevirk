@@ -35,7 +35,6 @@ echo move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file); //tm
 					
 					$result = mysqli_query($conn, $sql);
 					
-					
 					// found at: stackoverflow 
 					echo '<script type="text/javascript">
 					alert("Du har lavet et nyt blogindlæg se det under blog.");

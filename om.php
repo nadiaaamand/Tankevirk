@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Eksamensangst</title>
+    <title>Om Tankevirk</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,6 +42,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
+                    
                      <?php
 	//This code is taken from my last project on third semester (One Bowl)//
 			require_once 'dbcon.php';
@@ -51,8 +52,8 @@
 								
 			// output data of each row
 			while ($row = $result->fetch_assoc()) {
-				echo "<h1 class='page-header'>".$row[title]."</h1>";
-				echo "<p class='multic p'>".$row[text]."</p>";
+				echo '<h1 class="page-header">'.$row[title].'</h1>';
+				echo '<p class="multic p"><img class="hanne" src="img/om.jpg">'.$row[text].'</p>';
 			}
 			}
 ?>	

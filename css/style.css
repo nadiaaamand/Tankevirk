@@ -57,6 +57,7 @@
 /*Slider style from here: http://bootsnipp.com/snippets/featured/bootstrap-carousel-with-text*/
 .container {
     margin-top: 10px;
+	
 
 }
 
@@ -314,6 +315,33 @@ h3 {
 .headimg{
 	width:50%;
 	margin-bottom: 20px;
+}
+.hanne {
+	width: 180px;
+	float:left;
+	margin-right: 10px;
+}
+@media (min-width: 320px){
+.multic {
+     -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	}}
+@media (min-width: 750px){
+.multic {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	}}
+@media (min-width: 980px){
+.multic {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	}}
+.line {
+	border-left: solid 4px #1687a6;
+	margin-bottom: 1em;
 }
 /*------------------------Footer style--------------------------*/
 .footer {
