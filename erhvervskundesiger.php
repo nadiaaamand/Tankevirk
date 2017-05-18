@@ -48,17 +48,21 @@
         </div>
         <!-- /.row -->
 
-        <!-- Content Row -->
-        <div class="row">
             
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <p></p>
+             <!-- content -->
+        <div class="row">
+           <div class="col-lg-12">
+            <div class="col-md-6 line">
+					<p><b>Mark Terndrup - Nordic Biolaps</b></p>
+                <p><i>"Hanne har været til stor hjælp for min udvikling som kunde- og løsningsorienteret sælger. Hun har formået at få mig til at være mere opmærksom på, hvilke budskaber jeg udsender, både med mine ord og mine handlinger. Jeg har også benyttet Hanne som sparringspartner i forbindelse med håndtering af kundesituationer, herunder konflikter, forhandlinger og etablering af relationer. <br><br>Hun har en fantastisk evne til at sætte tingene i det rigtige perspektiv, hvorved alle situationer bliver overskuelige og mere håndterbare. Jeg kan varmt anbefale Hanne, både som underviser og som coach."</i></p>
+           
+           
             </div>
 
        
         </div>
         <!-- /.row -->
+	</div>
 	</div>
 
         <?php 
