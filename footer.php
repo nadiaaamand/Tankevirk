@@ -13,8 +13,8 @@
                         <p class="footerheader">Tankevirk V/ Hanne Aamand <br>
                         Dronningensvej 7, 1. TH <br>
 						5800 Nyborg <br>
-						Tlf.: <a href="tel:27286099">27 28 60 99</a><br>
-                       E-mail: <a href="mailto:tankevirk@tankevirk.dk">Skriv en mail til mig</a></p>
+						Tlf.: <a class="link" href="tel:27286099">27 28 60 99</a><br>
+                       E-mail: <a class="link" href="mailto:tankevirk@tankevirk.dk">Skriv en mail til mig</a></p>
                         
                     </div>
                 </div>
@@ -27,11 +27,11 @@
                     </div>
                     <div class="panel-body">
                         <p>
-                        <a href="coaching.php">Coaching</a><br>
-                        <a href="coaching_virksomhed.php">Coaching i virksomheder</a><br>
-                        <a href="detsigerkunder.php">Det siger kunderne</a><br>
-                        <a href="erhvervskundesiger.php">Det siger erhvervskunderne</a><br>
-                        <a href="kontakt.php">Kontakt</a></p>
+                        <a class="link" href="coaching.php">Coaching</a><br>
+                        <a class="link" href="coaching_virksomhed.php">Coaching i virksomheder</a><br>
+                        <a class="link" href="detsigerkunder.php">Det siger kunderne</a><br>
+                        <a class="link" href="erhvervskundesiger.php">Det siger erhvervskunderne</a><br>
+                        <a class="link" href="kontakt.php">Kontakt</a></p>
                     </div>
                 </div>
             </div>

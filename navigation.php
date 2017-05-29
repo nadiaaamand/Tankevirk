@@ -68,6 +68,9 @@ $curpage = basename ($_SERVER['PHP_SELF']);
                             </li>
                         </ul>
                     </li>
+                     <li>
+                        <a href="aktivering.php"<?php if($curpage == 'aktivering.php') {echo 'class="active"';}?>>Kursus for aktiveringsparate</a>
+                    </li>
                     <li>
                         <a href="blog.php"<?php if($curpage == 'blog.php') {echo 'class="active"';}?>>Blog</a>
                     </li>

@@ -90,15 +90,15 @@
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <span>Priser</span>
+                                <span>Om Tankevirk</span>
                             </h2>
                             <br>
                             <h3>
-                            	<span>Se priserne for terapi og coaching</span>
+                            	<span>Læs om personen bag Tankevirk</span>
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="priser.php">Læs mere</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="om.php">Læs mere</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
@@ -121,7 +121,7 @@
                 <div class="panel panel-default">
                     <a><img src="img/cta_terapi.jpg" alt="terapi session"></a>
                        <div class="panel-heading">
-                        <h4>Terapi</h4>
+                        <h4>Samtaleterapi</h4>
                     </div>
                     
                     <div class="panel-body">
