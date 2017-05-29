@@ -41,10 +41,11 @@ session_start();
 		} else {
 	?>
 	<!-- Page Heading -->
-        <div class="row">
+        <a href="administration.php">Tilbage</a>
+           <div class="row">
             <div class="col-lg-12">
         
-                <h1 class="page-header">Opdater blogindlæg
+                <h1 class="less">Opdater blogindlæg
 				</h1>
            <p>Her kan du opdatere dit blogindlæg.</p>
             </div>
@@ -63,21 +64,20 @@ session_start();
 			$stmt->execute();
 			$stmt->bind_result($text);
 			while ($stmt->fetch()){
-				echo '<form id="blogform" action="update_blog_form.php" enctype="multipart/form-data" method="POST">';
-				echo '<input type="hidden" name="bid" value="'.$bid.'">';
-				echo '<textarea type="text" cols="85" rows="20" name="text">' . $text . '</textarea>';
+				echo '<form class="blogform" action="update_blog_form.php" enctype="multipart/form-data" method="POST">';
+				echo '<input class="blogbg" type="hidden" name="bid" value="'.$bid.'">';
+				echo '<textarea class="blogbg" type="text" cols="85" rows="20" name="text">' . $text . '</textarea>';
 				echo '<br>';
-				echo '<button class="btn btn-default" type="submit" value="Opdater blogindlæg">Opdater blogindlæg</button>';
+				echo '<button class="btn btn-default button" type="submit" value="Opdater blogindlæg">Opdater blogindlæg</button>';
 				echo '</form>';
 					}
 				?>
         <p><b>Tips til gøre din blog visuelt bedre:</b></p>
 			<p>Ønsker du har bruge nogle af disse skal du blot kopiere dem op i tekstfeltet og erstatte "teksten".</p>
 			<!-- Found out how to display html code on website here: http://stackoverflow.com/questions/2820453/display-html-code-in-html-->
-			<p><b>Lille overskift:</b> &lt;h3&gt;Ønsket tekst her&lt;/h3&gt;</p>
 			<p><b>Tyk tekst:</b> &lt;b&gt;Ønsket tekst her&lt;/b&gt;</p>
 			<p><b>Kursiv tekst:</b> &lt;i&gt;Ønsket tekst her&lt;/i&gt;</p>
-			<p><b>Bullet points:</b> &lt;li&gt;Ønsket tekst her&lt;/li&gt;</p>
+			
         </div>
         <!-- /.row -->
 	</div>

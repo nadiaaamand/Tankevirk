@@ -60,19 +60,20 @@ $( ".selector" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
 		} else {
 	?>
 		  <!-- Page Heading -->
-			<div class="row">
-            <div class="col-lg-12">
-            <h1 class="page-header">Nyt blogindlæg</h1>
+		<a href="administration.php">Tilbage</a>
+           	<div class="row">
+            <div class="col-lg-12 blogform">
+            <h1 class="less">Nyt blogindlæg</h1>
            <p>Lav dit blogindlæg her - husk der både skal være en titel og tilhørende tekst.</p>
            
-			<form id='blogform' action='form.php' enctype="multipart/form-data" method='POST' >
-			<input type='text' name='title' placeholder='Title' required><br>
-			<input id='datepicker' class="selector" type='date' name='date' placeholder='Dato'><br>
-			<textarea type='text' cols="85" rows="20" name="text" required></textarea><br>
+			<form action='form.php' enctype="multipart/form-data" method='POST' >
+			<input class="blogbg" type='text' name='title' placeholder='Title' required><br>
+			<input id='datepicker' class="selector blogbg" type='date' name='date' placeholder='Dato'><br>
+			<textarea class="blogbg" type='text' cols="85" rows="20" name="text" required></textarea><br>
    			<p>Upload et header billede:</p>
     		<input type='file' name='fileToUpload'>
 						
-							<br><br>
+							<br>
 							
 			<button class="btn btn-default" type='submit'>Læg op</button>
 			</form>
@@ -81,7 +82,6 @@ $( ".selector" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
 			<!-- Found out how to display html code on website here: http://stackoverflow.com/questions/2820453/display-html-code-in-html-->
 			<p><b>Tyk tekst:</b> &lt;b&gt;Ønsket tekst her&lt;/b&gt;</p>
 			<p><b>Kursiv tekst:</b> &lt;i&gt;Ønsket tekst her&lt;/i&gt;</p>
-			<p><b>Bullet points:</b> &lt;li&gt;Ønsket tekst her&lt;/li&gt;</p>
 				
 				</div>
 			</div>

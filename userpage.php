@@ -36,7 +36,7 @@ session_start();
 <body class="less">
 
 <div class="row">
-<div class="col-lg-6">
+<div class="col-lg-12 form">
 		<h1>Velkommen</h1>
 		<p>Login for at opdatere dine sider eller lave et nyt blogindslag.</p>
 			<?php
@@ -46,10 +46,10 @@ session_start();
 						<button>LOG OUT</button>
 						</form>';
 			} else {
-				echo '<form id="signupform" action="login.php" method="POST">
-						<input type="username" name="username" placeholder="Username"><br>
-						<input type="password" name="pwd" placeholder="Password"><br>
-						<button class="btn btn-default" type="submit">LOGIN</button>
+				echo '<form class="form" action="login.php" method="POST">
+						<input class="bg" type="username" name="username" placeholder="Username"><br>
+						<input class="bg" type="password" name="pwd" placeholder="Password"><br>
+						<button class="btn btn-default submit" type="submit">LOGIN</button>
 					</form>';
 			}
 			

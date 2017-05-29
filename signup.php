@@ -39,7 +39,7 @@
 		echo "Hey!";
 		echo '</h1>';
 		} else {
-			echo '<h1>';
+			echo '<h1 class="form">';
 			echo "Bliv en del af teamet!";
 			echo '</h1>';
 		}
@@ -52,12 +52,12 @@
 		echo '</h1>';
 		} else {
 			echo //Sign up form, needing full name and username + password. Then by using the action (where it directs to another page) and POST method it directs the info to the database
-			'<form class="signup" action="adduser.php" method="POST">
-				<input class="signin" type="text" name="name" placeholder="Name" required><br>
-				<input class="signin" type="email" name="email" placeholder="Email" required><br>
-				<input class="signin" type="text" name="username" placeholder="Username" required><br>
-				<input class="signin" type="password" name="pwd" placeholder="Password" required><br>
-				<button id="submit" class="btn btn-default" type="submit">Sign Up</button>
+			'<form class="form" action="adduser.php" method="POST">
+				<input class="bg" type="text" name="name" placeholder="Name" required><br>
+				<input class="bg" type="email" name="email" placeholder="Email" required><br>
+				<input class="bg" type="text" name="username" placeholder="Username" required><br>
+				<input class="bg" type="password" name="pwd" placeholder="Password" required><br>
+				<button id="submit" class="btn btn-default submit" type="submit">Sign Up</button>
 		</form>';
 		}
 ?>
