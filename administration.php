@@ -72,7 +72,7 @@
             
 <?php
 			if (isset($_SESSION["id"])){
-				echo '<form class="space" id="loginform" action="logout.php">
+				echo '<form class="space morespace" id="loginform" action="logout.php">
 						<p>Husk at logge ud når du er færdig!</p>
 						<button class="btn btn-default">Log ud</button>
 						</form>';

@@ -49,7 +49,7 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 			    <div class="item active">
-			    	<img src="img/banner1.jpg" alt="First slide">
+			    	<img src="img/banner1.jpg" alt="Kurser i kommunikation">
                     <!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
@@ -67,7 +67,7 @@
                     </div><!-- /header-text -->
 			    </div>
 			    <div class="item">
-			    	<img src="img/banner2.jpg" alt="Second slide">
+			    	<img src="img/banner2.jpg" alt="Kursus til aktiveringsparate">
 			    	<!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
@@ -80,12 +80,12 @@
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="kommune_kursus.php">Læs mere</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="aktivering.php">Læs mere</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			    <div class="item">
-			    	<img src="img/banner3.jpg" alt="Third slide">
+			    	<img src="img/banner3.jpg" alt="Om Tankevirk">
 			    	<!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
@@ -157,27 +157,7 @@
             </div>
         </div>
         <!-- /.row -->
-        <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Tag styringen i dit privatliv og dit arbejdsliv</h1>
-            </div>
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, ad sale graeco torquatos eum, est ad epicuri sensibus forensibus. His dico nusquam ne. Sea aeque omnesque ex, ne eum meliore delectus, qui melius feugiat indoctum cu. Pertinax complectitur an usu, mea an euripidis intellegam comprehensam.<br><br>
-
-Per ne fierent facilisis. Omnium apeirian cu vix, detracto evertitur at pri. Ne erat dissentiet est, ei vel eros detracto. Vidit labitur quaestio te eum. Nec cu eruditi deseruisse disputationi, te vix errem docendi salutandi. In lorem concludaturque pro, facilisi expetenda omittantur quo in. Cum verear mandamus efficiendi ea, mei zril reformidans et, mel no putent aperiri persequeris.
-
-</p>
-            </div>
-            <div class="col-md-6">
-                <p>Unum propriae posidonium ei his. Suas soluta labore sit ne, imperdiet mnesarchum ei eam, mei ei gubergren deseruisse. Nam omnis semper vituperatoribus no, mel ad admodum lobortis. At per posse nulla deseruisse. Ea qui nemore mollis fabulas, ad illud omittam vis.<br><br>
-
-Vix cu vidit autem intellegat. Essent gloriatur sadipscing id duo, ad quas mentitum vituperatoribus pro. In pro viderer fuisset, ius sonet cetero ad. Et omnes sanctus adipisci his, ei mea purto munere maluisset, te ius fugit conclusionemque. Eu nec molestiae delicatissimi. Has dolores probatus id, mel cu solum intellegat.
-
-.</p>
-            </div>
-        </div>
-        <!-- /.row -->
+        
 </div>
 
 <?php 

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Kontakt Tankevirk</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,8 @@
                 <p>
                     Tankevirk V/ Hanne Aamand <br>
                         Dronningensvej 7, 1. TH <br>
-						5800 Nyborg
+						5800 Nyborg<br>
+               			CVR-nr: 36600993
                 </p>
                 <p><i class="fa fa-phone"></i> 
                     <a href="tel:27286099"> 27 28 60 99</a></p>
