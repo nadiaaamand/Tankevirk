@@ -34,7 +34,7 @@ session_start();
 </head>
 
 <body class="less">
-
+<?php include_once("analyticstracking.php") ?>
 <div class="row">
 <div class="col-lg-12 form">
 		<h1>Velkommen</h1>
