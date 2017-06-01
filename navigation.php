@@ -5,7 +5,7 @@ $curpage = basename ($_SERVER['PHP_SELF']);
 ?>
 	
    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -22,35 +22,35 @@ $curpage = basename ($_SERVER['PHP_SELF']);
                 <ul class="nav navbar-nav navbar-right">
                    
                     <li>
-                        <a href="om.php"<?php if($curpage == 'om.php') {echo 'class="active"';}?>>Om Tankevirk</a>
+                        <a href="om.php"<?php if($curpage == 'om.php') {echo ' class=" active"';}?>>Om Tankevirk</a>
                     </li>
         
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Private <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="eksamensangst.php"<?php if($curpage == 'eksamensangst.php') {echo 'class="active"';}?>>Eksamensangst</a>
+                                <a href="eksamensangst.php"<?php if($curpage == 'eksamensangst.php') {echo ' class=" active"';}?>>Eksamensangst</a>
                             </li>
                             <!-- Upcoming dropdown system found here: http://bootsnipp.com/snippets/featured/multi-level-dropdown-menu-bs3-->
                              <li class="dropdown-submenu"><a tabindex="-1" href="#">Terapi</a>
                 <ul class="dropdown-menu">
-					<li><a tabindex="-1" href="samtaleterapi.php"<?php if($curpage == 'samtaleterapi.php') {echo 'class="active"';}?>>Samtaleterapi</a></li>
+					<li><a tabindex="-1" href="samtaleterapi.php"<?php if($curpage == 'samtaleterapi.php') {echo ' class=" active"';}?>>Samtaleterapi</a></li>
                   <li class="dropdown-submenu">
-                    <a href="psykoterapi.php"<?php if($curpage == 'psykoterapi.php') {echo 'class="active"';}?>>Psykoterapi</a>
+                    <a href="psykoterapi.php"<?php if($curpage == 'psykoterapi.php') {echo ' class=" active"';}?>>Psykoterapi</a>
                     <ul class="dropdown-menu">
-                        <li><a href="nlp.php"<?php if($curpage == 'nlp.php') {echo 'class="active"';}?>>NLP</a></li>
+                        <li><a href="nlp.php"<?php if($curpage == 'nlp.php') {echo ' class=" active"';}?>>NLP</a></li>
 					  </ul>
-					  <li><a tabindex="-1" href="tre.php"<?php if($curpage == 'tre.php') {echo 'class="active"';}?>>Trauma Release Exercises</a></li>
+					  <li><a tabindex="-1" href="tre.php"<?php if($curpage == 'tre.php') {echo ' class=" active"';}?>>Trauma Release Exercises</a></li>
 					  </ul>
-					</li></li>
+					</li>
                           <li>
-                                <a href="hypnose.php"<?php if($curpage == 'hypnose.php') {echo 'class="active"';}?>>Hypnose</a>
+                                <a href="hypnose.php"<?php if($curpage == 'hypnose.php') {echo ' class=" active"';}?>>Hypnose</a>
                             </li>
-                           <li class="dropdown-submenu"><a tabindex="-1" href="coaching.php"<?php if($curpage == 'coaching.php') {echo 'class="active"';}?>>Coaching</a>
+                           <li class="dropdown-submenu"><a tabindex="-1" href="coaching.php"<?php if($curpage == 'coaching.php') {echo ' class=" active"';}?>>Coaching</a>
                 <ul class="dropdown-menu">
-					<li><a tabindex="-1" href="hvordan_coaching.php" <?php if($curpage == 'hvordan_coaching.php') {echo 'class="active"';}?>>Hvordan foregår coaching?</a></li></ul>
+					<li><a tabindex="-1" href="hvordan_coaching.php" <?php if($curpage == 'hvordan_coaching.php') {echo ' class=" active"';}?>>Hvordan foregår coaching?</a></li></ul>
                             <li>
-                                <a href="detsigerkunder.php"<?php if($curpage == 'detsigerkunder.php') {echo 'class="active"';}?>>Det siger kunderne</a>
+                                <a href="detsigerkunder.php"<?php if($curpage == 'detsigerkunder.php') {echo ' class=" active"';}?>>Det siger kunderne</a>
                             </li>
                         </ul>
                     </li>
@@ -58,35 +58,35 @@ $curpage = basename ($_SERVER['PHP_SELF']);
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Virksomheder <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="coaching_virksomhed.php"<?php if($curpage == 'coaching_virksomhed.php') {echo 'class="active"';}?>>Coaching i virksomheder</a>
+                                <a href="coaching_virksomhed.php"<?php if($curpage == 'coaching_virksomhed.php') {echo ' class=" active"';}?>>Coaching i virksomheder</a>
                             </li>
                             <li>
-                                <a href="kurser_kommunikation.php"<?php if($curpage == 'kurser_kommunikation.php') {echo 'class="active"';}?>>Kurser i kommunikation</a>
+                                <a href="kurser_kommunikation.php"<?php if($curpage == 'kurser_kommunikation.php') {echo ' class=" active"';}?>>Kurser i kommunikation</a>
                             </li>
                             <li>
-                                <a href="erhvervskundesiger.php"<?php if($curpage == 'erhvervskundesiger.php') {echo 'class="active"';}?>>Det siger erhverskunderne</a>
+                                <a href="erhvervskundesiger.php"<?php if($curpage == 'erhvervskundesiger.php') {echo ' class=" active"';}?>>Det siger erhverskunderne</a>
                             </li>
                         </ul>
                     </li>
                      <li>
-                        <a href="aktivering.php"<?php if($curpage == 'aktivering.php') {echo 'class="active"';}?>>Kursus for aktiveringsparate</a>
+                        <a href="aktivering.php"<?php if($curpage == 'aktivering.php') {echo ' class=" active"';}?>>Kursus for aktiveringsparate</a>
                     </li>
                     <li>
-                        <a href="blog.php"<?php if($curpage == 'blog.php') {echo 'class="active"';}?>>Blog</a>
+                        <a href="blog.php"<?php if($curpage == 'blog.php') {echo ' class=" active"';}?>>Blog</a>
                     </li>
                     <?php
 					if($_SESSION["id"]) { 
 					  echo '<li><a href="administration.php"';
 						if($curpage == "administration.php") {
-						   echo 'class="active"';
+						   echo ' class=" active"';
 				        } 
 					  echo '<a>Administration</a></li>';
 				 }?>
                     <li>
-                        <a href="priser.php"<?php if($curpage == 'priser.php') {echo 'class="active"';}?>>Priser</a>
+                        <a href="priser.php"<?php if($curpage == 'priser.php') {echo ' class=" active"';}?>>Priser</a>
                     </li>
                     <li>
-                        <a href="kontakt.php"<?php if($curpage == 'kontakt.php') {echo 'class="active"';}?>>Kontakt</a>
+                        <a href="kontakt.php"<?php if($curpage == 'kontakt.php') {echo ' class=" active"';}?>>Kontakt</a>
                     </li>
                 </ul>
             </div>

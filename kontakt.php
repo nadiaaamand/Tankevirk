@@ -116,7 +116,7 @@
            <div class="row">
             <div class="col-md-12">
                 <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.7135601761734!2d10.785577815785821!3d55.31062478043738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d3eef1f2a1675%3A0x54b632727981331d!2sDronningensvej+7%2C+5800+Nyborg!5e0!3m2!1sen!2sdk!4v1493209683592" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.7135601761734!2d10.785577815785821!3d55.31062478043738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d3eef1f2a1675%3A0x54b632727981331d!2sDronningensvej+7%2C+5800+Nyborg!5e0!3m2!1sen!2sdk!4v1493209683592" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
 	</div>
         </div>

@@ -60,17 +60,6 @@
         </div>
         <!-- /.row -->
 
-        <!-- Content Row -->
-        <div class="row">
-            
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <p></p>
-            </div>
-
-       
-        </div>
-        <!-- /.row -->
 	</div>
 
         <?php 
