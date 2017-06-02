@@ -114,7 +114,7 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Marketing Icons Section -->
+        <!-- Marketing Icons Section - Call to action -->
         <div class="row cta">
             <div class="col-lg-12">
             </div>
