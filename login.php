@@ -21,7 +21,7 @@ if($hash == 0){
 	$sql = "SELECT * FROM user WHERE username='$username' AND pwd='$hash_pwd'";
 	$result = mysqli_query($conn, $sql);
 
-	// if there is no match from the database, do 'else'
+	// if there is a match from the database, do 'else'
 	if (!$row = mysqli_fetch_assoc($result)){
 		echo '<script type="text/javascript">
 		alert("Your username or password is incorrect. Please try again or contact you adminstrator");</script>';
